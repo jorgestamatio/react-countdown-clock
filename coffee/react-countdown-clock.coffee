@@ -68,8 +68,8 @@ ReactCountdownClock = CreateReactClass
     @_background.height = @props.size * 2
     @_timer.width = @props.size * 2
     @_timer.height = @props.size * 2
-    @_background.scale(2,2)
-    @_timer.scale(2,2)
+    @_background.getContext('2d').scale(2,2)
+    @_timer.getContext('2d').scale(2,2)
     @_timer.textAlign = 'center'
     @_timer.textBaseline = 'middle'
     if @props.onClick?
