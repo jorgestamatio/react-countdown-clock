@@ -68,6 +68,10 @@ ReactCountdownClock = CreateReactClass
     @refs.background.height = @props.size * 2
     @refs.timer.width = @props.size * 2
     @refs.timer.height = @props.size * 2
+    @refs.background.style.width = @props.size+"px"
+    @refs.background.style.height = @props.size+"px"
+    @refs.timer.style.width = @props.size+"px"
+    @refs.timer.style.height = @props.size+"px"
     @refs.background.getContext('2d').scale(2,2)
     @refs.timer.getContext('2d').scale(2,2)
     @_timer.textAlign = 'center'
